@@ -1,1 +1,1 @@
-# ok-yay.github.io
+# ok-yay.github.io/index.html
