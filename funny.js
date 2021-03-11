@@ -104,6 +104,7 @@ function update() {
 function draw() {
 	if (keys.length>0 && start == false) {
 		start = true 
+		song.loop();
 		song.play();
 	}
 	fill(0,0,0);
