@@ -1,1 +1,1 @@
-# ok-yay.github.io/jfk.html
+# ok-yay.github.io/index.html
