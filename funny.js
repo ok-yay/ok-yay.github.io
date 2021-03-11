@@ -18,7 +18,11 @@ var ack = Math.PI;
 var ax = 0
 var ay = 0;
 var time = 0
-
+var songe;
+function preload() {
+	songe = loadSound("song.mp3");
+  	songe.play();	
+}
 
 var aax = [
 	
