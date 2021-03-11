@@ -98,6 +98,31 @@ function draw() {
 	background(0,0,0,1000);
 	fill(255,0,0)
 	text(Math.round((time/60 + Number.EPSILON) * 100) / 100,20,20)
+	if (keys[8]) {
+		console.log("funny");
+		died = false;
+		time = 0;
+		maxcool = 10;
+		rotatespeed = 0;
+		a = Math.PI;
+		ack = Math.PI;
+		ax = 0;
+		ay = 0;
+		aax = [
+	
+		];
+		aay = [
+	
+		];
+		aas = [
+		
+		];
+		aaoff = [
+	
+		];
+		
+		
+	}
 	if (died == false) {
 		update();
 		
