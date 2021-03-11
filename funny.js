@@ -36,7 +36,6 @@ var keys = [
 
 function preload() {
     songe = loadSound("midi.mp3");
-
 }
 
 function setup() {
@@ -45,7 +44,6 @@ function setup() {
 	createCanvas(width, height);
 	background(100);
   	songe.play();
-    	songe.loop();
 }
 
 keyPressed = function() {
