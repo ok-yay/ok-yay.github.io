@@ -2,8 +2,7 @@
 var song;
 
 function preload() {
-	song = loadSound("midi.mp3");
- 	song.play();
+	song = loadSound("https://ok-yay.github.io/midi.mp3");
 }
 function setup() {
 	var height = 500;
