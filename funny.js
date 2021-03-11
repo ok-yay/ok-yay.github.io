@@ -58,7 +58,7 @@ function update() {
 	time++;
 	very++; //will be used later
 	if (maxcool>3) {
-		maxcool -= 0.025
+		maxcool -= 0.0025
 	}
 	if (rotatespeed<0.09001) {
 		rotatespeed += 0.000015
