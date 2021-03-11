@@ -35,15 +35,15 @@ var keys = [
 ];
 
 function preload() {
-    songe = loadSound("midi.mp3");
+    //songe = loadSound("midi.mp3");
 }
 
 function setup() {
 	var height = 500;
 	var width = 500;
 	createCanvas(width, height);
-	background(100);
-  	songe.play();
+	//background(100);
+  	//songe.play();
 }
 
 keyPressed = function() {
