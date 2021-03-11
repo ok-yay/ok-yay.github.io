@@ -2,7 +2,7 @@
 var song;
 
 function preload() {
-	song = loadSound("https://ok-yay.github.io/midi.mp3");
+	song = loadSound("https://ok-yay.github.io/copper trees.mp3");
 }
 function setup() {
 	var height = 500;
