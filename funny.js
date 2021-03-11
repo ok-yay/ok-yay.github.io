@@ -38,7 +38,7 @@ function setup() {
 	var width = 500;
 	createCanvas(width, height);
 	background(100);
-	songe = loadSound("midi.mp3");
+	songe = loadSound("https://ok-yay.github.io/midi.mp3");
   	songe.play();
 	songe.loop();
 }
