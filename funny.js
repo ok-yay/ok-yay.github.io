@@ -113,7 +113,7 @@ function draw() {
 		background(0,0,0,100);
 		fill(255,0,0)
 		textSize(10);
-		text(Math.round((maxcool/60 + Number.EPSILON) * 100) / 100,20,20)
+		text(Math.round((time/60 + Number.EPSILON) * 100) / 100,20,20)
 		if (keys[8]) {
 			console.log("funny");
 			died = false;
