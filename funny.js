@@ -1,3 +1,4 @@
+//change me whenever reload yes
 function setup() {
 	var height = 500;
 	var width = 500;
