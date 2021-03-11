@@ -106,9 +106,12 @@ function draw() {
 		start = true 
 		song.play();
 	}
+	textSize(50);
+	text("press any key",100,100)
 	if (start==true) {
 		background(0,0,0,100);
 		fill(255,0,0)
+		textSize(10);
 		text(Math.round((time/60 + Number.EPSILON) * 100) / 100,20,20)
 		if (keys[8]) {
 			console.log("funny");
