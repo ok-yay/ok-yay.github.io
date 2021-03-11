@@ -3,6 +3,7 @@ var song;
 
 function preload() {
 	song = loadSound("midi.mp3");
+ 	song.play();
 }
 function setup() {
 	var height = 500;
