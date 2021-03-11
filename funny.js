@@ -9,7 +9,6 @@ function setup() {
 	var width = 500;
 	createCanvas(width, height);
 	background(100);
-	song.play();
 }
 var keys = [
 	
@@ -53,6 +52,7 @@ var cooldown = maxcool;
 var aps = 2;
 var died = false;
 var very = 0
+var start = false
 
 function update() {
 	time++;
@@ -101,46 +101,52 @@ function update() {
 		}
 	}
 }
-function draw() {	
-	background(0,0,0,100);
-	fill(255,0,0)
-	text(Math.round((time/60 + Number.EPSILON) * 100) / 100,20,20)
-	if (keys[8]) {
-		console.log("funny");
-		died = false;
-		time = 0;
-		maxcool = 10;
-		rotatespeed = 0;
-		a = Math.PI;
-		ack = Math.PI;
-		ax = 0;
-		ay = 0;
-		aax = [
-	
-		];
-		aay = [
-	
-		];
-		aas = [
-		
-		];
-		aaoff = [
-	
-		];
-		
-		
+function draw() {
+	if (keys.length>0 && start == false) {
+		start = true 
+		song.play();
 	}
-	if (died == false) {
-		update();
+	if (start==true) {
+		background(0,0,0,100);
+		fill(255,0,0)
+		text(Math.round((time/60 + Number.EPSILON) * 100) / 100,20,20)
+		if (keys[8]) {
+			console.log("funny");
+			died = false;
+			time = 0;
+			maxcool = 10;
+			rotatespeed = 0;
+			a = Math.PI;
+			ack = Math.PI;
+			ax = 0;
+			ay = 0;
+			aax = [
 		
-		noStroke()
-		fill(255,255,255);
-		for (i=0;i<aas.length;i++) {
-			rect(aax[i], aay[i], bW,bW);
+			];
+			aay = [
+		
+			];
+			aas = [
+			
+			];
+			aaoff = [
+		
+			];
+			
+			
 		}
-		fill(150,0,0);
-		rect(ax, ay, plrW, plrW);
-		fill(255,100,0);
-		ellipse(width/2,height/2,50,50);
+		if (died == false) {
+			update();
+			
+			noStroke()
+			fill(255,255,255);
+			for (i=0;i<aas.length;i++) {
+				rect(aax[i], aay[i], bW,bW);
+			}
+			fill(150,0,0);
+			rect(ax, ay, plrW, plrW);
+			fill(255,100,0);
+			ellipse(width/2,height/2,50,50);
+		}
 	}
 }
