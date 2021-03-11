@@ -57,7 +57,7 @@ var start = false
 function update() {
 	time++;
 	very++; //will be used later
-	if (maxcool>3) {
+	if (maxcool>0.9) {
 		maxcool -= 0.0025
 	}
 	if (rotatespeed<0.09001) {
