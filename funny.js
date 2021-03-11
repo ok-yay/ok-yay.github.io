@@ -1,9 +1,25 @@
+function setup() {
+	var height = 500;
+	var width = 500;
+	createCanvas(width, height);
+	background(100);
+}
+var keys = [
+	
+];
+keyPressed = function() {
+	keys[keyCode] = true;
+}
+keyReleased = function() {
+	keys[keyCode] = false;
+}
 var a = Math.PI;
 var ack = Math.PI;
 var ax = 0
 var ay = 0;
 var time = 0
-var songe;
+
+
 var aax = [
 	
 ];
@@ -30,30 +46,6 @@ var cooldown = maxcool;
 var aps = 2;
 var died = false;
 var very = 0
-var keys = [
-	
-];
-
-function preload() {
-    //songe = loadSound("midi.mp3");
-}
-
-function setup() {
-	var height = 500;
-	var width = 500;
-	createCanvas(width, height);
-	//background(100);
-  	//songe.play();
-}
-
-keyPressed = function() {
-	keys[keyCode] = true;
-}
-keyReleased = function() {
-	keys[keyCode] = false;
-}
-
-
 
 function update() {
 	time++;
