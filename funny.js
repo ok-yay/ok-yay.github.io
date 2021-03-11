@@ -33,19 +33,20 @@ var very = 0
 var keys = [
 	
 ];
+
+function preload() {
+    songe = loadSound("midi.mp3");
+
+}
+
 function setup() {
 	var height = 500;
 	var width = 500;
 	createCanvas(width, height);
 	background(100);
-}
-function preload() {
-	songe = loadSound("https://ok-yay.github.io/midi.mp3");
   	songe.play();
-	songe.loop();	
+    	songe.loop();
 }
-
-
 
 keyPressed = function() {
 	keys[keyCode] = true;
