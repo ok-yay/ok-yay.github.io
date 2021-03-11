@@ -24,6 +24,7 @@ function preload() {
   	songe.play();
 	songe.loop();
 }
+preload();
 
 var aax = [
 	
