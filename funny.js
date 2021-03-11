@@ -1,9 +1,15 @@
 //change me whenever reload yes
+var song;
+
+function preload() {
+	song = loadSound("midi.mp3");
+}
 function setup() {
 	var height = 500;
 	var width = 500;
 	createCanvas(width, height);
 	background(100);
+	song.play();
 }
 var keys = [
 	
