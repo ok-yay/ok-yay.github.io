@@ -102,7 +102,7 @@ function update() {
 	}
 }
 function draw() {	
-	background(0,0,0,1000);
+	background(0,0,0,100);
 	fill(255,0,0)
 	text(Math.round((time/60 + Number.EPSILON) * 100) / 100,20,20)
 	if (keys[8]) {
