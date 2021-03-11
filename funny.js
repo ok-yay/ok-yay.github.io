@@ -59,6 +59,7 @@ function update() {
 	very++; //will be used later
 	if (maxcool>3) {
 		maxcool -= 0.0025
+		console.log(maxcool);
 	}
 	if (rotatespeed<0.09001) {
 		rotatespeed += 0.000015
