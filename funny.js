@@ -106,6 +106,7 @@ function draw() {
 		start = true 
 		song.play();
 	}
+	fill(0,0,0);
 	textSize(50);
 	text("press any key",100,100)
 	if (start==true) {
