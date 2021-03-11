@@ -59,7 +59,6 @@ function update() {
 	very++; //will be used later
 	if (maxcool>3) {
 		maxcool -= 0.0025
-		console.log(maxcool);
 	}
 	if (rotatespeed<0.09001) {
 		rotatespeed += 0.000015
@@ -114,7 +113,7 @@ function draw() {
 		background(0,0,0,100);
 		fill(255,0,0)
 		textSize(10);
-		text(Math.round((time/60 + Number.EPSILON) * 100) / 100,20,20)
+		text(Math.round((maxcool/60 + Number.EPSILON) * 100) / 100,20,20)
 		if (keys[8]) {
 			console.log("funny");
 			died = false;
