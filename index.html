@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <head>
-  <style>
-    body {
-      background-image: url("uh.png");
-      background-size: 100px 100px;
-    };
-    a {
-      background-color: coral;
-      font-family: "Comic Sans";
-      font-size: 30px;
-    }
-  </style>
+  <meta name="title" content="trust :)">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#4b4c51">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
   <title>no more FORTNITE</title>
 </head>
 <body>
-  <a href="game.html">game</a>
+  <h1 id="coolio" style="font-family:cursive;">ooooo you want to click this button!!!!!!!!</h1>
+  <button onclick="jumpscare();"style="font-size:30px; font-family:cursive;">please</button>
+  <br>
+  <br> <!-- my awesome code (i definitely have done html recently) -->
+  <marquee scrollamount="30" direction="right">
+  <audio loop id="what" hidden>
+    <source src="yakuza.mp3" type="audio/mp3">
+  </audio>
+    <img src="elaborate joke.png" width="600">
+  </marquee>
+  <script>
+    function jumpscare() {
+
+      document.getElementById("what").play();
+      document.getElementById("coolio").innerHTML = "ty"
+      window.open("spookyvirus.html", "_blank", 'menubar=no, status=no, toolbar=no, resizable=no, width=1280, height=720, titlebar=no, alwaysRaised=yes');
+      setTimeout(stop,1200);
+    }
+    function stop() {
+      document.getElementById("what").pause();
+      document.getElementById("what").currentTime = 0;
+
+    }
+  </script>
 </body>
