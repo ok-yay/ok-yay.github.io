@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>hey idito</title>
+    </head>
+    <body>
+        <h2 style="font-family:cursive;">do <span id="you" style="color:red;">you</span> want this to happen to you? then press the button!</h2>
+        <button id="awesomeButton" style="font-family:cursive; font-size: 30px;"><b>this <i>so</i> endearing</b></button>
+
+        <script>
+            var silly = document.getElementById("awesomeButton");
+            var youee = document.getElementById("you");
+            var step = 0;
+            function loop() {
+                step+=0.1;
+                var fortinbras = Math.sin(step)*10+20;
+                youee.style.fontSize = ""+fortinbras+"px";
+                var randomnessX = Math.floor(Math.random()*100) - 50;
+                var randomnessY = Math.floor(Math.random()*100) - 50;
+
+                silly.style.transform = "skew("+randomnessX+"deg,"+randomnessY+"deg)";
+                
+
+                setTimeout(loop,10);
+            }
+            setTimeout(loop,10);
+        </script>
+    </body>
+
+
+</html>
